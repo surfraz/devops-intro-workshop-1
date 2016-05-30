@@ -15,13 +15,13 @@ RUN apk --update add ruby-rdoc ruby-irb
 RUN gem install bundler
 
 # Copy the local application folder to the inside of the container
-ADD /my_application /my_application
+ADD /unicorn /unicorn
 
 # Expose network ports
 EXPOSE 8080
 
 # Set the default directory where CMD will execute
-WORKDIR /my_application
+WORKDIR /unicorn
 
 # Install required gems using bundler
 RUN bundle install
