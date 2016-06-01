@@ -5,3 +5,6 @@ gem 'sinatra', '1.4.6'
 
 # Use JSON extension provided by the Sinatra::Contrib project
 gem 'sinatra-contrib', '~> 1.4.2'
+
+# a purely ruby json library
+gem 'json_pure', '1.8.3'

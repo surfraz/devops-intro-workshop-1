@@ -2,7 +2,8 @@
 # to load in all gems listed in Gemfile.
 require 'bundler'
 Bundler.require
+require 'json/pure'
 
 get '/' do
-    json "Hello workshoppers!"
+    json( { :greeting => "Hello workshoppers!" } )
 end
